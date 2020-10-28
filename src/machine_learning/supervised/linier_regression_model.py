@@ -32,6 +32,7 @@ plt.scatter(data_set["area"], data_set["price"])
 plt.xlabel('X axis Area')
 plt.ylabel('Y axis Price')
 plt.title('Home Prices In Dhaka')
+plt.show()
 
 xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=.30, random_state=2)
 
@@ -45,6 +46,7 @@ plt.xlabel('X axis Area')
 plt.ylabel('Y axis Price')
 plt.title('Home Prices In Dhaka')
 plt.plot(data_set.area, regration.predict(data_set[['area']]))
+plt.show()
 
 # provide predicted result for different area
 price = regration.predict([[21000]])
