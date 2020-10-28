@@ -37,7 +37,7 @@ plt.show()
 xtrain, xtest, ytrain, ytest = train_test_split(x, y, test_size=.30, random_state=2)
 
 regration = LinearRegression()
-model = regration.fit(xtrain, ytrain)
+regration.fit(xtrain, ytrain)
 regration.predict(xtest)
 
 # brest feed line
