@@ -17,7 +17,8 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=.30, random_
 
 reg_model = LinearRegression()
 reg_model.fit(x_train, y_train)
-reg_model.predict(x_test)
+accurecy = reg_model.score(x_test, y_test)
+print('Model Accurecy ', accurecy)
 
 plt.scatter(data['speed'], data['risk'])
 plt.xlabel('x axis for speed')
