@@ -37,9 +37,9 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.30, random
 model = LinearRegression()
 model.fit(x_train, y_train)
 
-# model accurecy score
-accurecy = model.score(x_test, y_test)
-print('Model Accurecy ', accurecy)
+# model accuracy score
+accuracy = model.score(x_test, y_test)
+print('Model Accuracy ', accuracy)
 
 
 def predict():
