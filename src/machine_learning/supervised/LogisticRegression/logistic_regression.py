@@ -1,7 +1,8 @@
-# when outcome comes only two value like true false then use it.
+# when outcome comes only two value like true false then use binary_logistic_regression.
+# when outcome comes more then two values will use multi_nominal_logistic_regression
+# when outcome comes maintain by order like (ssc,hsc,bsc) will use ordinal_logistic_regression.
 
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 
